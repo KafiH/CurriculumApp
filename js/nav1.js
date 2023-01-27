@@ -29,13 +29,13 @@ nav.appendChild(leftNavGroup);
 // -- Profile Icon
 const profileIcon = document.createElement('a');
     profileIcon.innerHTML="JD"; 
-    profileIcon.href= "/profile";   
+    profileIcon.href= "../views/profile.html";   
     profileIcon.id="proCon";
 leftNavGroup.appendChild(profileIcon);
 
 // -- # Redemptions Link
 const achievLink = document.createElement('a');
-    achievLink.href="/achiev";
+    achievLink.href="../views/achiev.html";
     achievLink.id="achievLink";
 leftNavGroup.appendChild(achievLink);
 
@@ -43,7 +43,7 @@ leftNavGroup.appendChild(achievLink);
 const achievements = document.createElement('img');
 // -- * DYNAMIC ADDITIONS: image needs a div with a function that displays the number of 'achievements' *
     achievements.src="/img/presentExample.png"; 
-    achievements.link = "/shop";
+    achievements.link = "../views/shop.html";
     achievements.id="achiev"
 achievLink.appendChild(achievements);
 
@@ -52,7 +52,7 @@ const userScore = document.createElement('a');
 // --  (Placeholder Text)
 //-- * DYNAMIC ADDITIONS: create function that displays from leaderboard *
     userScore.innerHTML = "<b>1000 Xp</b>"; 
-    userScore.href = "/leaderBoard";
+    userScore.href = "../views/leaderBoard.html";
     userScore.id="userScore";
 leftNavGroup.appendChild(userScore);
 
@@ -71,18 +71,18 @@ nav.appendChild(rightNavGroup);
 // -- right nav links
 const about = document.createElement('a');
     about.innerHTML = "About";
-    about.href="/about";
+    about.href="../views/about.html";
     about.className='rightNav';
 rightNavGroup.appendChild(about);
 
 const  curriculum = document.createElement('a');
     curriculum.innerHTML = "Curriculum";
-    curriculum.href="/roadMap";
+    curriculum.href="../views/roadMap.html";
     curriculum.className='rightNav';
 rightNavGroup.appendChild(curriculum);
 
 const contact = document.createElement('a');
     contact.innerHTML = "Contact";
-    contact.href="/contactus";
+    contact.href="../views/contactus.html";
     contact.className='rightNav';
 rightNavGroup.appendChild(contact);
